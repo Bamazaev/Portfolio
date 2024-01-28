@@ -261,6 +261,7 @@ body {
   .skills {
     width: 90%;
     left: 0;
+    bottom: 0;
   }
   .section .prof {
     right: 0;
