@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --clr-neon: hsl(317 100% 54%)
+  --clr-bg: hsl(323 21% 16%) ;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +42,11 @@ body {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 25px;
+  background-color: transparent;
+  padding: 5px;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
   color: white;
   font-weight: 500;
   cursor: pointer;
@@ -52,6 +61,10 @@ body {
   color: white;
   background: white;
   opacity: 0.85;
+}
+.header .navbar .btnLogin-popup:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3, 0 0 120px #2196f3, 0 0 160px #2196f3;
 }
 
 #particles-js {
@@ -124,6 +137,10 @@ body {
   transform: transLateY(-44.5%) scale(0);
   transition: 0.4s ease-in-out;
 }
+.section .wrapper .icon-close {
+  font-size: 44px;
+  padding: 25px;
+}
 .section .wrapper .logreg-box {
   width: 100%;
 }
@@ -190,7 +207,7 @@ body {
     display: none;
   }
   .section {
-    padding-top: 25px;
+    padding: 25px;
   }
   .section .wrapper {
     width: 100%;
