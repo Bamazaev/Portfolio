@@ -57,10 +57,16 @@ body {
 }
 
 .section {
-  min-height: 100vh;
-  background: url("./image/fon1.png") no-repeat;
+  height: 100%;
+  background: #000 no-repeat;
   background-size: cover;
   background-position: center;
+}
+.section .prof {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65vh;
 }
 .section .text h1 {
   color: white;

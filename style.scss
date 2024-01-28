@@ -58,6 +58,12 @@ body{
 
 
 .section{
+    .prof{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 65vh;
+    }
     .text{
         h1{
             color: white;
@@ -150,8 +156,8 @@ body{
         transform: transLateY(-44.5%) scale(0);
         transition: 0.4s ease-in-out;
     }
-    min-height: 100vh;
-    background: url('./image/fon1.png') no-repeat;
+    height: 100%;
+    background: #000 no-repeat;
     background-size: cover;
     background-position: center;
 }
