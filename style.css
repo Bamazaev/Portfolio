@@ -176,8 +176,28 @@ body {
 }
 
 @media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    padding: 15px 26px;
+  }
+  .header .logo {
+    width: 80%;
+  }
+  .header .navbar .btnLogin-popup {
+    font-size: 45px;
+  }
   .header .navbar a {
     display: none;
+  }
+  .section {
+    padding-top: 25px;
+  }
+  .section .wrapper {
+    width: 100%;
+  }
+  .section .wrapper .icon-close {
+    font-size: 45px;
+    padding: 25px;
   }
   .section .prof {
     left: 0;

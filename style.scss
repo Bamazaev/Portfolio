@@ -193,13 +193,29 @@ transform: translateY(0%) scale(100%);
 
 @media (max-width: 768px){
     .header{
+        justify-content: space-between;
+        padding: 15px 26px;
+        .logo{
+            width: 80%;
+        }
         .navbar{
+            .btnLogin-popup{
+                font-size: 45px;
+            }
             a{
                 display: none;
             }
         }
     }
     .section{
+        padding-top: 25px;
+        .wrapper{
+            .icon-close{
+                font-size: 45px;
+                padding: 25px;
+            }
+            width: 100%;
+        }
         .prof{
             left: 0;
             right: 0;
