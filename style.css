@@ -175,6 +175,27 @@ body {
   transform: translateY(0%) scale(100%);
 }
 
+@media (max-width: 768px) {
+  .header .navbar a {
+    display: none;
+  }
+  .section .prof {
+    left: 0;
+    right: 0;
+    width: 90%;
+  }
+  .section .text h1 {
+    top: 350px;
+    left: 20px;
+    font-size: 65px;
+    line-height: 60px;
+  }
+  .section .text p {
+    width: 90%;
+    left: 20px;
+    top: 550px;
+  }
+}
 @media (max-width: 400px) {
   .header .navbar a {
     display: none;
