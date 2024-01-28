@@ -6,6 +6,10 @@
   font-family: "Popping", sans-serif;
 }
 
+body {
+  background-color: black;
+}
+
 .header {
   position: fixed;
   top: 0;
