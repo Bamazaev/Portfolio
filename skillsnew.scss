@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Popping", sans-serif;
+}
+body{
+
+    width: 100%;
+    height: 100vh;
+}
+
+
+.skills{
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    .skill{
+        .skill-name{
+            font-size: 18px;
+            font-weight: 700;
+            color: #f1f1f1;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+        .skill-bar{
+            height: 14px;
+            background: #282828;
+            border-radius: 5px;
+            font-weight: 600;
+            .skill-per{
+                height: 14px;
+                background: #03bcf4;
+                border-radius: 5px;
+                position: relative;
+                animation: fillBars 2.5s 1;
+            }
+            .skill-per::before{
+                content: attr(per);
+                position: absolute;
+                padding: 4px 6px;
+                background: #f1f1f1;
+                border-radius: 4px;
+                font-size: 12px;
+                top: -30px;
+                right: 0;
+                transform: translateX(50%);
+            }
+            .skill-per::after{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background: #f1f1f1;
+                top: -20px;
+                right: 0;
+                transform: translateX(50%);
+                rotate: 45deg;
+                border-radius: 2px;
+                z-index: -1;
+            }
+            @keyframes fillBars {
+                from{
+                    width: 0;
+                }
+                to{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
