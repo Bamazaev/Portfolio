@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popping", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: transparent;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.header .navbar a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 40px;
+}
+.header .navbar .btnLogin-popup {
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.header .navbar .btnLogin-popup::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  color: white;
+  background: white;
+  opacity: 0.85;
+}
+
+#particles-js {
+  height: 99vh;
+}
+
+.section {
+  min-height: 100vh;
+  background: url("./image/fon1.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section .text h1 {
+  color: white;
+  position: absolute;
+  left: 120px;
+  top: 240px;
+  font-size: 105px;
+  line-height: 95px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.2666666667));
+  line-height: 95px;
+  outline: none;
+  animation: animate 10s linear infinite;
+  transition: 0.8s;
+  pointer-events: none;
+}
+@keyframes animate {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
+.section .text p {
+  position: absolute;
+  left: 120px;
+  top: 580px;
+  color: white;
+  width: 60%;
+  text-align: justify;
+  font-size: 12px;
+  pointer-events: none;
+}
+.section .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 100%;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  box-shadow: 1px 0 10px white;
+  border-right: 2px solid rgba(225, 225, 225, 0.1);
+  border-radius: 15px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  transform: transLateY(-44.5%) scale(0);
+  transition: 0.4s ease-in-out;
+}
+.section .wrapper .logreg-box {
+  width: 100%;
+}
+.section .wrapper .logreg-box .form-box-menu .but {
+  display: flex;
+  justify-content: center;
+}
+.section .wrapper .logreg-box .form-box-menu .but a {
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.section .wrapper .logreg-box .form-box-menu .but a:hover {
+  opacity: 0.4;
+}
+.section .wrapper .logreg-box .form-box-menu .logreg-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+.section .wrapper .logreg-box .form-box-menu .logreg-title h2 {
+  font-size: 72px;
+}
+.section .wrapper .logreg-box .form-box-menu .logreg-title p {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+#media-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#media-options a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  margin: 10px 0;
+  font-size: 28px;
+}
+#media-options a img {
+  width: 80%;
+  padding-left: 20%;
+}
+
+#pop_up.active {
+  transform: translateY(0%) scale(100%);
+}/*# sourceMappingURL=style.css.map */
