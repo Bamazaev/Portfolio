@@ -11,6 +11,7 @@ body{
     height: 100vh;
 }
 .header{
+    backdrop-filter: blur(15px);
     .navbar{
         a{
         font-size: 18px;
@@ -69,6 +70,27 @@ body{
     height: 99vh;
 }
 
+#logos{
+    width: 90%;
+    text-align: center;
+    padding-right: 45px;
+    position: absolute;
+    bottom: 300px;
+    left: 90px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    a{
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 25px;
+        transition: 0.3s;
+    }
+    a:hover{
+        color: #0e3742;
+    }
+}
 
 .section{
     .prof{
@@ -288,6 +310,10 @@ transform: translateY(0%) scale(100%);
             width: 90%;
         }
         .text{
+            .textproject{
+                top: 120px;
+                left: 45px;
+            }
             h1{
                 top: 350px;
                 left: 20px;
@@ -300,6 +326,13 @@ transform: translateY(0%) scale(100%);
                 top: 550px;
             }
         }
+    }
+    #logos{
+        bottom: 0;
+        left: 45px;
+        grid-template-columns: auto;
+
+        
     }
 }
 

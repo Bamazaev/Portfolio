@@ -13,6 +13,8 @@ body {
 }
 
 .header {
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   position: fixed;
   top: 0;
   left: 0;
@@ -64,6 +66,28 @@ body {
 
 #particles-js {
   height: 99vh;
+}
+
+#logos {
+  width: 90%;
+  text-align: center;
+  padding-right: 45px;
+  position: absolute;
+  bottom: 300px;
+  left: 90px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+#logos a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 25px;
+  transition: 0.3s;
+}
+#logos a:hover {
+  color: #0e3742;
 }
 
 .section {
@@ -263,6 +287,10 @@ body {
     grid-template-columns: auto;
     width: 90%;
   }
+  .section .text .textproject {
+    top: 120px;
+    left: 45px;
+  }
   .section .text h1 {
     top: 350px;
     left: 20px;
@@ -273,6 +301,11 @@ body {
     width: 90%;
     left: 20px;
     top: 550px;
+  }
+  #logos {
+    bottom: 0;
+    left: 45px;
+    grid-template-columns: auto;
   }
 }
 @media (max-width: 400px) {
