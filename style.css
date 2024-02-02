@@ -78,6 +78,23 @@ body {
   right: 50px;
   width: 65vh;
 }
+.section .fotologos {
+  position: absolute;
+  top: 150px;
+}
+.section .text {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.section .text img {
+  z-index: 98;
+  width: 100%;
+  border-radius: 40px;
+}
 .section .text h1 {
   color: white;
   position: absolute;
@@ -240,6 +257,10 @@ body {
   .section .prof {
     left: 0;
     right: 0;
+    width: 90%;
+  }
+  .section .fotologos {
+    grid-template-columns: auto;
     width: 90%;
   }
   .section .text h1 {
