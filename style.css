@@ -13,8 +13,6 @@ body {
 }
 
 .header {
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
   position: fixed;
   top: 0;
   left: 0;
@@ -106,6 +104,10 @@ body {
   position: absolute;
   top: 150px;
 }
+.section #main1 {
+  position: absolute;
+  top: 250px;
+}
 .section .text {
   width: 100%;
   display: grid;
@@ -113,6 +115,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 25px;
+}
+.section .text .textjob {
+  position: absolute;
+  top: 0;
+  left: 115px;
+  top: 100px;
 }
 .section .text img {
   z-index: 98;

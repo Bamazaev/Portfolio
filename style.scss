@@ -11,7 +11,6 @@ body{
     height: 100vh;
 }
 .header{
-    backdrop-filter: blur(15px);
     .navbar{
         a{
         font-size: 18px;
@@ -103,7 +102,17 @@ body{
         position: absolute;
         top: 150px;
     }
+    #main1{
+        position: absolute;
+        top: 250px;
+    }
     .text{
+        .textjob{
+            position: absolute;
+            top: 0;
+            left: 115px;
+            top: 100px;
+        }
         width: 100%;
         display: grid;
         grid-template-columns: auto auto auto;
