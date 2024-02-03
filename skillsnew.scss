@@ -16,6 +16,11 @@ body{
     right: 0;
 }
 
+#skillsnew{
+    top: 150px;
+    left: 750px;
+    
+}
 .skills{
     position: absolute;
     bottom: 45px;
@@ -89,4 +94,13 @@ body{
         display: grid;
         place-content: center;
         }
+}
+
+
+
+@media (max-width: 768px){
+#skillsnew{
+    top: 750px;
+    left: 0;
+}
 }
